@@ -12,6 +12,7 @@ License:        MIT
 Group:          Development/Libraries/Tcl
 Url:            https://github.com/dbohdan/tcl-duktape.git
 BuildRequires:  tcl >= 8.5
+BuildRequires:  tcl-devel >= 8.5
 BuildRequires:  make
 BuildRequires:  gcc
 Source:         %{name}-%{version}.tar.gz

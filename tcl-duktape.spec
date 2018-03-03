@@ -31,16 +31,16 @@ a JavaScript interpreter library.
 make
 
 %install
-mkdir -p %{buildroot}%{tcl_archdir}/%{pkgname}-%{version}
-cp libtclduktape.so %{buildroot}%{tcl_archdir}/%{pkgname}-%{version}
-cp pkgIndex-libdir.tcl %{buildroot}%{tcl_archdir}/%{pkgname}-%{version}/pkgIndex.tcl
-cp oo.tcl %{buildroot}%{tcl_archdir}/%{pkgname}-%{version}
-cp utils.tcl %{buildroot}%{tcl_archdir}/%{pkgname}-%{version}
+mkdir -p %{buildroot}%{tcl_archdir}/%{pkgname}%{version}
+cp libtclduktape.so %{buildroot}%{tcl_archdir}/%{pkgname}%{version}
+cp pkgIndex-libdir.tcl %{buildroot}%{tcl_archdir}/%{pkgname}%{version}/pkgIndex.tcl
+cp oo.tcl %{buildroot}%{tcl_archdir}/%{pkgname}%{version}
+cp utils.tcl %{buildroot}%{tcl_archdir}/%{pkgname}%{version}
 
 
 %files
 %doc README.md LICENSE
-%{tcl_archdir}/%{pkgname}-%{version}
+%{tcl_archdir}/%{pkgname}%{version}
 
 %changelog
 

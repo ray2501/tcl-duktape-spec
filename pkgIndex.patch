@@ -1,9 +1,0 @@
---- pkgIndex-libdir.tcl.orig	2018-03-04 00:05:20.222941461 +0800
-+++ pkgIndex-libdir.tcl	2018-03-04 00:05:34.358952253 +0800
-@@ -1,5 +1,5 @@
- package ifneeded "duktape" 0.3.3 [format "%s\n%s" \
--    [list load libtclduktape[info sharedlibextension]] \
-+    [list load [file join $dir libtclduktape[info sharedlibextension]]] \
-     [list source [file join $dir utils.tcl]] \
- ]
- package ifneeded "duktape::oo" 0.3.3  \

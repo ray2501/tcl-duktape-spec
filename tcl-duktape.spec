@@ -5,7 +5,7 @@
 %define pkgname duktype
 
 Name:           tcl-duktape
-Version:        0.5.0
+Version:        0.6.1
 Summary:        Tcl bindings for Duktape
 Release:        0
 License:        MIT
@@ -30,8 +30,11 @@ a JavaScript interpreter library.
 make
 
 %install
-tclsh configure --destdir %{buildroot}%{tcl_archdir}/%{pkgname}%{version}
-make install
+mkdir -p %{buildroot}%{tcl_archdir}/%{pkgname}%{version}
+cp libtclduktape.so %{buildroot}%{tcl_archdir}/%{pkgname}%{version}
+cp pkgIndex.tcl %{buildroot}%{tcl_archdir}/%{pkgname}%{version}
+cp ./lib/oo.tcl %{buildroot}%{tcl_archdir}/%{pkgname}%{version}
+cp ./lib/utils.tcl %{buildroot}%{tcl_archdir}/%{pkgname}%{version}
 
 %files
 %doc README.md LICENSE

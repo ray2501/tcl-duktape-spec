@@ -1,8 +1,8 @@
 #!/usr/bin/tclsh
 
 set arch "x86_64"
-set base "tcl-duktape-0.6.1"
-set fileurl "https://github.com/dbohdan/tcl-duktape/archive/v0.6.1.tar.gz"
+set base "tcl-duktape-0.7.0"
+set fileurl "https://github.com/dbohdan/tcl-duktape/archive/v0.7.0.tar.gz"
 
 set var [list wget $fileurl -O $base.tar.gz]
 exec >@stdout 2>@stderr {*}$var

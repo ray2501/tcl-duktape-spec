@@ -5,7 +5,7 @@
 %define pkgname duktype
 
 Name:           tcl-duktape
-Version:        0.7.0
+Version:        0.8.0
 Summary:        Tcl bindings for Duktape
 Release:        0
 License:        MIT
